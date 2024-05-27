@@ -1,0 +1,78 @@
+<!DOCTYPE >
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Challenge</title>
+  </head>
+  <body>
+    <header>
+      <nav class="lg:w-[1024px] mx-auto flex items-center justify-between inline border-b-2 py-6">
+        <div class="flex items-center justify-center ">
+          <h1 class="font-bold text-2xl mr-8">sneakers</h1>
+          <ul class="flex items-center space-x-6 text-gray-400 h-fullG">
+            <li class="hover:border-b-4 hover:border-orange-500 hover:h-full"><a href="#">Collection</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="flex items-center justify-center space-x-4">
+          <a href="#">
+            <img src="/images/icon-cart.svg" alt="" srcset="">
+          </a>
+          <a href="#">
+            <img class="w-10" src="/images/image-avatar.png" alt="" srcset="">
+          </a>
+        </div>
+      </nav>
+    </header>
+    <section class="grid lg:w-[1024px] lg:grid-cols-2 mx-auto">
+      <div class="pt-14 grid grid-cols-1 w-[400]">
+        <img id="imgMain" class="w-full h-[350px] rounded-[10px]" src="images/image-product-1.jpg" alt="" srcset="">
+        <div class="flex items-center space-x-2 pt-6 w-[400px]">
+          <a class=" hover:border-orange-400 hover:border-2 rounded-[10px]" href="#">
+            <img class="rounded-[10px] hover:opacity-[50%]"  id="catch" src="images/image-product-1.jpg" alt="">
+          </a>
+          <a href="#" class=" hover:border-orange-400 hover:border-2 rounded-[10px]">
+            <img class="rounded-[10px]  hover:opacity-[50%]"  id="catch" src="images/image-product-2.jpg" alt="">
+          </a>
+          <a href="#" class=" hover:border-orange-400 hover:border-2 rounded-[10px]">
+            <img class="rounded-[10px]  hover:opacity-[50%]" id="catch" src="images/image-product-3.jpg" alt="">
+          </a>
+          <a href="#" class=" hover:border-orange-400 hover:border-2 rounded-[10px]">
+            <img class="rounded-[10px]  hover:opacity-[50%]" id="catch" src="images/image-product-4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="pt-[100px]">
+        <small class="text-gray-400">SNEAKER COMPANY</small>
+        <h1 class="font-bold text-3xl py-4">Fall Limited Edition <br> Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear <br>
+          companion. Featuring a durable rubber outer sole, they'll <br>
+          withstand everything the weather can offer.
+        </p>
+        <div class="flex items-center space-x-6 py-8">
+          <p class="font-bold text-2xl">$125.00</p>
+          <p class=" bg-black text-white w-12 h-6 text-center rounded-[5px]">50%</p>
+        </div>
+        <div class="flex space-x-8">
+          <div class="bg-gray-200 rounded">
+            <button class="px-4 py-2 font-bold">-</button>
+            0
+            <button class="px-4 py-2 font-bold">+</button>
+          </div>
+          <button class="flex px-14 py-2 bg-orange-400 rounded font-bold">
+            <img src="images/icon-cart.svg" alt="" srcset="">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="effect.js"></script>
+  </body>
+</html>
